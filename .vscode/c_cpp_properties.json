@@ -5,12 +5,17 @@
             "includePath": [
                 "${default}",
                 "${workspaceFolder}/**",
-                "/usr/include/**",
                 "/usr/include/fuse3"
             ],
-            "defines": ["FUSE_USE_VERSION=31"],
+            "defines": [
+                "FUSE_USE_VERSION=31",
+                "_DEFAULT_SOURCE",
+                "_GNU_SOURCE",
+            ],
             "cStandard": "c17",
-            "cppStandard": "c++17"
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/gcc"
         }
     ],
     "version": 4
